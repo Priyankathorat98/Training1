@@ -1,0 +1,54 @@
+<html>  
+<style>
+body{
+    
+    background-image: linear-gradient(red,purple);
+    text-align:center;
+    
+}  
+
+.img{
+    float:right;
+    opacity:2;
+}
+img:hover {
+    opacity:0.3;
+}
+
+.click{
+    color:chartreuse;
+    font-family: cursive;
+    
+  }
+.tooltip {  
+    cursor: col-resize;
+    position: relative;  
+    display: inline-block;  
+    border-bottom:3px dashed yellow;
+    font-size:100px;  
+    font-family:monospace;
+}  
+.tooltip .tooltiptext {  
+    visibility:hidden;  
+    width:400px;  
+    background-color:aquamarine;  
+    color:darkred;  
+    text-align: center;  
+    border-radius:6px;    
+    position: absolute;  
+    z-index:2;  
+    top:50%;  
+    right:100%;  
+}  
+.tooltip:hover .tooltiptext {  
+    visibility:visible;  
+}  
+</style>  
+<h> Tooltip and cursor</h2> <br>
+<p class="tooltip"><strong>welcome here</strong><br>
+
+<span class="tooltiptext">Goto to next page.</span> </p>  
+<a href="http:www.google.com"><h1 class="click">just click here</h1></a>   
+ <img src="image.jfif" class="img" > 
+
+</html>  
