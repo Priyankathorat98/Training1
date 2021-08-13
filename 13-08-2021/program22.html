@@ -1,0 +1,53 @@
+<html>
+<head>
+      <title>
+           calculator using switch case.
+      </title>
+</head>
+<body>
+<h1> calculator using switch case.</h1>
+<script>
+
+  var a,b,operator;
+
+       a = Number(prompt("Enter first number"));
+       b = Number(prompt("Enter second number"));
+       operator = prompt("Enter the Operation");
+
+      document.write(" first no : " + a + "</h2>");
+      document.write(" second no :" + b + "</h2>");
+      var result;
+
+      if (b != 0) 
+      {
+        switch (operator) 
+        {
+            case "+":
+            result = a + b;
+            break;
+            
+            case "-":
+            result = a - b;
+            break;
+            
+            case "*":
+            result = a * b;
+            break;
+            
+            case "/":
+            result = a / b;
+            break;
+
+          default:
+            result = "Enter Valid Operation";
+        }
+      } 
+      else 
+         {
+            result = "Enter valid Number";
+         }
+
+      document.write(" Result is : " + result ); 
+</script>
+</body>
+</html>
