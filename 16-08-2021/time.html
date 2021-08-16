@@ -1,0 +1,21 @@
+<html>
+<head>
+
+    <script type="text/javascript">
+        function time()
+        {
+           var time=new Date();
+           var hr,min,sec;
+           hr=time.getHours(); 
+           min=time.getMinutes();
+           sec=time.getSeconds();
+    
+           document.write("time is:" +hr+ ":" +min+ ":" +sec+ "</br>");
+        }
+    </script>
+
+</head>
+<body>
+    <input type="button" value="click" onclick="time()">
+</body>
+</html>
