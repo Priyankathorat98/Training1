@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script type="text/javascript">
+    var person = {
+    name: "Priyanka",
+    age: 30,
+    gender: "Female",
+    
+    };
+    
+    document.write(person.age+"<br>"); //1st method accessing object property
+    document.write(person["age"]+"<br>");// 2nd method accessing object property
+    document.write("<br>"); 
+
+     for(var i in person)            //for in loop to display element in person ...i.e looping through object properties
+     { 
+        document.write(person[i] + "<br>"); 
+    
+     }
+     
+     document.write("<br>"); 
+
+     person.country="India"; //setting object property...i.e add value
+     for(var i in person) 
+     { 
+        document.write(person[i] + "<br>"); 
+    
+     }
+     document.write("<br>"); 
+
+     delete person.age;  //deleting object property...i.e delete value
+     for(var i in person) 
+     { 
+        document.write(person[i] + "<br>"); 
+    
+     }
+</script>
+</body>
+</html>

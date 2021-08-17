@@ -1,0 +1,22 @@
+<html>
+<body>
+    <p id="demo"></p>
+<script type="text/javascript">
+
+// Store JSON data in a JS variable
+var json = {
+    "name": "Akash",
+     "age": 30, 
+     "country": "India"
+    };
+
+    // Converting JSON-encoded string to JS object
+var obj = JSON.parse(json);
+
+// Accessing individual value from JS object
+alert(obj.name); // Outputs: Akash
+alert(obj.age); // Outputs: 30
+alert(obj.country); // Outputs: India
+</script>
+</body>
+</html>

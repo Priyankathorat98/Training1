@@ -1,0 +1,19 @@
+<html>
+<body>
+<p class="student">this is get by class name .</p>
+<script type="text/javascript">
+    var mark = document.getElementsByClassName("student");
+    console.log(mark);
+
+    // Displaying the selected elements count
+    document.write("Number of selected elements: " + mark.length);
+    // Applying bold style to first element in selection
+    
+    mark[0].style.fontWeight = "bold";
+    mark[0].style.border="5px solid red";
+    mark[0].style.background = "yellow";
+    mark[0].style.fontStyle = "italic";
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<html name="abc">
+<head>
+    <meta charset="utf-8">
+    <title>js select a topmost element</title>
+</head>
+<body>
+    <script type="text/javascript">
+        document.write("<h1>"+document.documentElement.getAttribute("name")+"<h1>");
+   
+        document.body.style.background="red";
+
+        document.write(document.head.firstElementChild.getAttribute("charset")+"<br>");
+
+        alert(document.head.firstElementChild.nodeName);
+         
+    </script>
+</body>
+</html>
