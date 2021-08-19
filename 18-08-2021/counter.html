@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function clickCounter()
+{
+var n = localStorage.getItem('counter');
+if(n===null)
+{
+    n=0;
+}
+else
+{
+ n++;
+}
+console.log(n);
+document.getElementById("result").innerHTML =  n ;
+localStorage.setItem("counter", n);
+
+}
+function clearCount()
+{
+    window.localStorage.clear();
+}
+</script>
+</head>
+<body>
+    <p><button onclick="clickCounter()" type="button">Click here</button></p>
+    <p><button onclick="clearCount()" type="button">Clear all</button></p>
+    <div id="result"></div>
+</body>
+
+</html>
+
+
+
