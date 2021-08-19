@@ -1,0 +1,107 @@
+<html>
+<body>
+<style>
+    form{
+	background-image:linear-gradient(pink,rgb(117, 117, 207));
+	color:red;
+    width:30%;
+	margin-left:20%;
+	align-self: center;
+}
+.text{
+	margin-left: 32%;
+	margin-top: 8px;
+    margin-right: 20%;
+}
+</style>
+    <form name= "frm" >
+    <div class="text">
+    First name:<br> <input type="text"  onmouseover="fname()" id="fn"> <br> <br>
+    Middle name:<br>  <input type="text"  onmouseup="mname()" id="mn"> <br> <br>
+    Last name:<br>  <input type="text"  onmousedown="lname()" id="ln"> <br> <br>
+    
+    Username:<br>  <input type="text"  onmousewheel="uname()" id="un"> <br> <br>
+    Email:<br>  <input type="email"  onmouseout="emailn()" id="en"> <br> <br>
+    Retype email:<br>  <input type="email"  onmousemove="remailn()" id="ren"> <br> <br>
+
+    Password:<br>  <input type="password"  onkeypress="passw()" id="pass"> <br> <br>
+    Retype Password:<br>  <input type="password"  onkeydown="rpassw()" id="rpass"> <br> <br>
+    Submit:<br>  <input type="submit"  onclick="subm()" id="sub"> <br> <br>
+    
+</div>
+    </form>
+
+<script type="text/javascript"> 
+
+document.getElementById("fn").addEventListener("mouseover",fname);
+document.getElementById("mn").addEventListener("mouseup",mname);
+document.getElementById("ln").addEventListener("mousedown",lname);
+
+document.getElementById("un").addEventListener("mousewheel",uname);
+document.getElementById("en").addEventListener("mouseout",emailn);
+document.getElementById("ren").addEventListener("mousemove",remailn);
+
+document.getElementById("pass").addEventListener("keypress",passw);
+document.getElementById("rpass").addEventListener("keydown",rpassw);
+document.getElementById("sub").addEventListener("click",subm);
+
+function fname()
+{
+    frm.fn.style.backgroundColor="red";
+    frm.fn.style.width="200px";
+    frm.fn.style.height="35px";
+
+}
+function mname()
+{
+    frm.mn.style.backgroundColor="pink";
+    frm.mn.style.width="200px";
+    frm.mn.style.height="35px";
+}
+function lname()
+{
+    frm.ln.style.backgroundColor="yellow";
+    frm.ln.style.width="200px";
+    frm.ln.style.height="35px";
+}
+
+function uname()
+{
+    frm.un.style.backgroundColor="green";
+    frm.un.style.width="200px";
+    frm.un.style.height="35px";
+}
+function emailn()
+{
+    frm.en.style.backgroundColor="grey";
+    frm.en.style.width="200px";
+    frm.en.style.height="35px";
+}
+function remailn()
+{
+    frm.ren.style.backgroundColor="purple";
+    frm.ren.style.width="200px";
+    frm.ren.style.height="35px";
+}
+
+function passw()
+{
+    frm.pass.style.color="orange";
+    frm.pass.style.width="200px";
+    frm.pass.style.height="35px";
+}
+function rpassw()
+{
+    frm.rpass.style.color="blue";
+    frm.rpass.style.width="200px";
+    frm.rpass.style.height="35px";
+}
+
+function subm()
+{
+    alert("form submitted");
+}
+</script>
+</head>
+</body>
+</html>

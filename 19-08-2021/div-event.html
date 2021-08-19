@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div id="demo">This is an event</div>
+
+<script>
+document.getElementById("demo").addEventListener("mouseover", function() 
+{
+  this.style.backgroundColor = "red";
+  this.style.color = "Black";
+  this.style.border="5px dotted purple";
+});
+
+document.getElementById("demo").addEventListener("click", function() 
+{
+  this.style.fontSize = "30px";
+  this.style.backgroundColor = "cyan";
+  this.style.color = "red";
+
+});
+document.getElementById("demo").addEventListener("dblclick", function() 
+{
+  this.style.fontSize = "50px";
+  this.style.backgroundColor = "lightblue";
+  this.style.color = "Black";
+
+});
+document.getElementById("demo").addEventListener("mousewheel", function() 
+{
+  this.style.backgroundColor = "yellow";
+  this.style.color = "red";
+  this.style.border="5px solid black";
+});
+
+</script>
+
+</body>
+</html>
