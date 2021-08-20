@@ -1,0 +1,23 @@
+<html>
+    <head></head>
+    <body>
+        <script src="D:\WCG\Training1\jqueryc.js"></script>
+        <script type="text/javascript">
+        $(document).ready(function()
+        {
+         $("#bstart").click(function()
+         {
+         $("div").animate({height:300},2000);
+         $("div").animate({width:500},5000);
+         });
+         $("#bstop").click(function()
+         {
+         $("div").stop();
+         });
+        });
+        </script>
+        <button id="bstart">Start Animate</button>
+        <button id="bstop">Stop Animate</button>
+        <div style="background:rgb(245, 177, 32);height:100px;width:100px"></div>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="D:\WCG\Training1\jqueryc.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+    $("p").click(function()
+    {
+    $(this).slideUp();
+    });
+
+    $("p").dblclick(function()
+    {
+    $(this).slideDown();
+    });
+
+    $("h1").hover(function()
+    {
+    $(this).css("background-color", "purple");
+    }, 
+    function()
+    {
+    $(this).css("background-color", "pink");
+    });
+
+    $("#name").mouseenter(function()
+    {
+     $(this).css("color","orange");
+
+    });
+    
+    $("#demo").mouseleave(function()
+    {
+     $(this).css("color","yellow");
+     $(this).css("fontSize","30px");
+
+    });
+});
+</script>
+    <h1>hello world</h1>
+    <h1 id="name" >thank you</h1>
+    <p id="demo">heyyy</p>
+    <p style="background-color : red;">welcome to jquery</p>
+    <p style="background-color : green;">welcome to jquery</p>
+    <p style="background-color : blue;">welcome to jquery</p>
+</body> 
+</html>
