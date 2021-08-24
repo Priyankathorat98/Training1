@@ -1,0 +1,118 @@
+<html>
+
+<body>
+    <style>
+        form {
+            background-image: linear-gradient(rgb(246, 248, 118), rgb(240, 89, 89));
+            color: red;
+            width: 50%;
+            margin-left: 20%;
+            align-self: center;
+            font-size:18px;
+        }
+
+        .text {
+            margin-left: 35%;
+            margin-top: 8px;
+            margin-right: 10%;
+        }
+        .error{
+            color:black;
+        }
+    
+    </style>
+    <script src="D:\WCG\Training1\jqueryc.js"></script>
+    <script src="D:\WCG\Training1\21-08-2021\jquery-validation-1.19.3\dist\jquery.validate.min.js"></script>
+    
+    <script type="text/javascript">
+        $(document).ready(function ()
+         {
+          $("#form1").validate({
+            rules:{
+                First_name:{
+                  required:true  
+                },
+                Middle_name:{
+                  required:true  
+                },
+                Last_name:{
+                  required:true  
+                },
+                Age:{
+                  required:true,
+                  range:[18,100]
+                },
+                Username:{
+                  required:true,
+                  minlength:4  
+                },
+                Email:{
+                  required:true ,
+                  email: true 
+                },
+                Retype_email:{
+                  required:true ,
+                  equalTo: "#Email" 
+                },
+                Password:{
+                  required:true ,
+                  minlength: 5,
+                },
+                Confirm_Password:{
+                  required:true ,
+                  minlength: 5,
+				          equalTo: "#Password"
+                },
+                Choose_File:{
+                  required:true ,
+                  allowedExtension:"['pdf']"
+                }
+        
+            },
+            messages: {
+			Password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long"
+			},
+			Confirm_Password: {
+				required: "Please provide a password",
+				minlength: "Your password must be at least 5 characters long",
+				equalTo: "Please enter the same password as above"
+			},
+      Choose_File: {
+				required: "Please choose a file",
+				allowedExtension: "Please choose a valid file type"
+			},
+            
+            }
+        });
+
+        });
+
+    </script>
+    <form id="form1" action="">
+        <div class="text">
+            First_name:<br> <input type="text" name="First_name" placeholder="Enter First Name"> <br> <br>
+            Middle_name:<br> <input type="text" name="Middle_name" placeholder="Enter Middle Name" > <br> <br>
+            Last_name:<br> <input type="text" name="Last_name" placeholder="Enter Last Name" > <br> <br>
+
+            Age:<br> <input type="number" name="Age"placeholder="enter your age" > <br> <br>
+
+            Username:<br> <input type="text" name="Username" placeholder="Enter Username Name"> <br> <br>
+            Email:<br> <input type="email" name="Email" placeholder="Enter Email"> <br> <br>
+            Retype_email:<br> <input type="email" name="Retype_email" placeholder="Retype Email"> <br> <br>
+
+            Password:<br> <input type="password" name="Password" placeholder="Enter Password"> <br> <br>
+            Confirm_Password:<br> <input type="password" name="Confirm_Password" placeholder="Retype Password"> <br> <br>
+
+            Choose_File:<br> <input type="file" name="Choose_File"> <br> <br>
+            <br><input type="submit" name="Submit"><br> <br>
+
+        </div>
+    </form>
+
+
+    </head>
+</body>
+
+</html>
