@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <title>lightbox plugin</title>
+        <style type="text/css">
+            /* jQuery lightBox plugin - Gallery style */
+            #gallery
+            {
+                background-color: rgb(160, 243, 204);
+                padding: 200px;
+                width: 100%;
+            }
+            #gallery ul
+            {
+                list-style: none;
+            }
+            #gallery ul li
+            {
+                display: inline;
+            }
+            #gallery ul img
+            {
+                border: 20px solid #fc3838;
+                border-width: 10px 10px 20px;
+            }
+            #gallery ul a:hover img
+            {
+                border: 5px solid rgb(28, 14, 224);
+                border-width: 5px 5px 20px;
+                color: #fff;
+            }
+            #gallery ul a:hover
+            {
+                color: #fff;
+            }
+        </style>
+        <script type="text/javascript" src="D:\WCG\Training1\jqueryc.js"></script>
+
+        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox.css" media="screen" />
+
+        <script type="text/javascript" src="js/jquery.1.2.3.js"></script>
+
+        <script type="text/javascript" src="js/jquery.lightbox.min.js"></script>
+        
+     </head>
+    <body>
+        
+    
+                <div id="gallery">
+                    <ul>
+                        <li><a href="photos/image1.jpg" >
+                            <img src="photos/thumb_image1.jpg" width="200" height="200" alt="" />
+                        </a></li>
+                        <li><a href="photos/image2.jpg" >
+                            <img src="photos/thumb_image2.jpg" width="200" height="200" alt="" />
+                        </a></li>
+                        <li><a href="photos/image3.jpg" >
+                            <img src="photos/thumb_image3.jpg" width="200" height="200" alt="" />
+                        </a></li>
+                        <li><a href="photos/image4.jpg" >
+                            <img src="photos/thumb_image4.jpg" width="200" height="200" alt="" />
+                        </a></li>
+                        <li><a href="photos/image5.jpg" >
+                            <img src="photos/thumb_image5.jpg" width="200" height="200" alt="" />
+                        </a></li>
+                    </ul>
+                </div>
+          
+            </ul>
+             
+        </div> 
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#gallery a').lightBox();
+            });
+        </script>
+    </body>
+</html>
